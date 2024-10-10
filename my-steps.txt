@@ -1,84 +1,210 @@
 ### Step 2A
+/c/Users/AdamT
 
 
 ### Step 2B
+$ cd C:/Users/AdamT/OneDrive/Desktop
 
 
 ### Step 2C
+$ cd unit1-git-practice
 
 
 ### Step 2D
+$ pwd
+/c/Users/AdamT/OneDrive/Desktop/unit1-git-practice
 
 
 ### Step 2E
+$ ls
 
 
 ### Step 2F
+my-steps.txt
 
 
 ### Step 2G
+$ cd /c/
 
 
 ### Step 2H
+$ pwd
+/c
 
 
 ### Step 2I
+$ ls
+'$Recycle.Bin'/             DumpStack.log.tmp       Steam/
+'$WINDOWS.~BT'/             ESD/                   'System Volume Information'/
+'$WinREAgent'/              Intel/                  Users/
+'$Windows.~WS'/             OneDriveTemp/           Windows/
+ AMD/                       PerfLogs/               XboxGames/
+ AVScanner.ini             'Program Files'/         bootTel.dat
+ Config.Msi/               'Program Files (x86)'/   hiberfil.sys
+'Documents and Settings'@   ProgramData/            pagefile.sys
+ DumpStack.log              Recovery/               swapfile.sys
 
 
 ### Step 2J
+$ cd ~
 
 
 ### Step 2K
+$ cd ~/onedrive/desktop/unit1-git-practice/
 
 
 
 ### Step 3A
+AdamT@DESKTOP-P17KBOG MINGW64 ~/onedrive/desktop/unit1-git-practice (master)
+$ mkdir veggies
+
+AdamT@DESKTOP-P17KBOG MINGW64 ~/onedrive/desktop/unit1-git-practice (master)
+$ mkdir meats
+
+AdamT@DESKTOP-P17KBOG MINGW64 ~/onedrive/desktop/unit1-git-practice (master)
+$ mkdir desserts
+
+AdamT@DESKTOP-P17KBOG MINGW64 ~/onedrive/desktop/unit1-git-practice (master)
+$ ls
+desserts/  meats/  my-steps.txt  veggies/
 
 
 ### Step 3B
+$ mv desserts sweets
 
 
 ### Step 3C
+$ mkdir protiens
 
 
 ### Step 3D
+$ mv meats ~/onedrive/desktop/unit1-git-practice/protiens
 
 
 ### Step 3E
+AdamT@DESKTOP-P17KBOG MINGW64 ~/onedrive/desktop/unit1-git-practice (master)
+$ cd ~/onedrive/desktop/unit1-git-practice/veggies
+
+AdamT@DESKTOP-P17KBOG MINGW64 ~/onedrive/desktop/unit1-git-practice/veggies (master)
+$ touch carrot.txt
+
+AdamT@DESKTOP-P17KBOG MINGW64 ~/onedrive/desktop/unit1-git-practice/veggies (master)
+$ touch pea.txt
 
 
 ### Step 3F
+AdamT@DESKTOP-P17KBOG MINGW64 ~/onedrive/desktop/unit1-git-practice/veggies (master)
+$ cd ../sweets
+
+AdamT@DESKTOP-P17KBOG MINGW64 ~/onedrive/desktop/unit1-git-practice/sweets (master)
+$ touch cookie.txt
 
 
 ### Step 3G
+AdamT@DESKTOP-P17KBOG MINGW64 ~/onedrive/desktop/unit1-git-practice/sweets (master)
+$ cp cookie.txt donut.txt
 
+AdamT@DESKTOP-P17KBOG MINGW64 ~/onedrive/desktop/unit1-git-practice/sweets (master)
+$ rm donut.txt
+
+AdamT@DESKTOP-P17KBOG MINGW64 ~/onedrive/desktop/unit1-git-practice/sweets (master)
+$ mv cookie.txt donut.txt
+
+//I just messed up and fixed it ^
 
 ### Step 3H
+AdamT@DESKTOP-P17KBOG MINGW64 ~/onedrive/desktop/unit1-git-practice/sweets (master)
+$ cd ..
+
+AdamT@DESKTOP-P17KBOG MINGW64 ~/onedrive/desktop/unit1-git-practice (master)
+$ touch thing.txt
 
 
 ### Step 3I
+$ cp thing.txt tofu.txt
 
 
 ### Step 3J
+$ mv tofu.txt ./protiens
 
 
 ### Step 3K
+AdamT@DESKTOP-P17KBOG MINGW64 ~/onedrive/desktop/unit1-git-practice (master)
+$ cp thing.txt crab.txt
+
+AdamT@DESKTOP-P17KBOG MINGW64 ~/onedrive/desktop/unit1-git-practice (master)
+$ mv crab.txt ./protiens/meats
 
 
 ### Step 3L
+$ rm thing.txt
 
 
 ### Step 3M
+$ cp -r veggies plants
 
 
 ### Step 3N
+AdamT@DESKTOP-P17KBOG MINGW64 ~/onedrive/desktop/unit1-git-practice (master)
+$ mkdir drinks
+
+AdamT@DESKTOP-P17KBOG MINGW64 ~/onedrive/desktop/unit1-git-practice (master)
+$ rm -r drinks
 
 
 
 ### Step 4
+AdamT@DESKTOP-P17KBOG MINGW64 ~/onedrive/desktop/unit1-git-practice (master)
+$ git init
+Initialized empty Git repository in C:/Users/AdamT/OneDrive/Desktop/unit1-git-practice/.git/
+
+AdamT@DESKTOP-P17KBOG MINGW64 ~/onedrive/desktop/unit1-git-practice (master)
+$ git add .
+warning: in the working copy of 'my-steps.txt', LF will be replaced by CRLF the next time Git touches it
+//I figured out that the above warning was just because I had the directory i was commiting open in my file explorer
+
+AdamT@DESKTOP-P17KBOG MINGW64 ~/onedrive/desktop/unit1-git-practice (master)
+$ git add .
+
+AdamT@DESKTOP-P17KBOG MINGW64 ~/onedrive/desktop/unit1-git-practice (master)
+$ git commit -m 'Initial Commit'
+[master (root-commit) d6bf30b] Initial Commit
+ 8 files changed, 88 insertions(+)
+ create mode 100644 my-steps.txt
+ create mode 100644 plants/carrot.txt
+ create mode 100644 plants/pea.txt
+ create mode 100644 protiens/meats/crab.txt
+ create mode 100644 protiens/tofu.txt
+ create mode 100644 sweets/donut.txt
+ create mode 100644 veggies/carrot.txt
+ create mode 100644 veggies/pea.txt
+
+AdamT@DESKTOP-P17KBOG MINGW64 ~/onedrive/desktop/unit1-git-practice (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
 
 
 ### Step 5
+AdamT@DESKTOP-P17KBOG MINGW64 ~/onedrive/desktop/unit1-git-practice (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+AdamT@DESKTOP-P17KBOG MINGW64 ~/onedrive/desktop/unit1-git-practice (master)
+$ git remote add origin https://github.com/AdamMTill/Unit-1-Practice-Project-Command-Line-Git.git
+git branch -M main
+git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (8/8), 677 bytes | 677.00 KiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/AdamMTill/Unit-1-Practice-Project-Command-Line-Git.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
 
 
 ### Step 6
