@@ -208,6 +208,28 @@ branch 'main' set up to track 'origin/main'.
 
 
 ### Step 6
+AdamT@DESKTOP-P17KBOG MINGW64 ~/onedrive/desktop/unit1-git-practice (main)
+$ touch menu.txt
+
+AdamT@DESKTOP-P17KBOG MINGW64 ~/onedrive/desktop/unit1-git-practice (main)
+$ git add .
+
+AdamT@DESKTOP-P17KBOG MINGW64 ~/onedrive/desktop/unit1-git-practice (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   menu.txt
+        modified:   my-steps.txt
+
+
+AdamT@DESKTOP-P17KBOG MINGW64 ~/onedrive/desktop/unit1-git-practice (main)
+$ git commit -m 'Commit it to Menury'
+[main 9daab1b] Commit it to Menury
+ 2 files changed, 126 insertions(+)
+ create mode 100644 menu.txt
 
 
 ### Step 7
